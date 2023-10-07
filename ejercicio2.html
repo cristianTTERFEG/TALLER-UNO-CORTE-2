@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="js/utilidades2.js"></script>
+</head>
+<body>
+    <h1>Registro de Estudiantes</h1>
+    <h2>Agregar Estudiante</h2>
+    <form id="addStudentForm">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" required><br>
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required><br>
+        <label for="identificacion">Numero de Identificacion:</label>
+        <input type="text" id="identificacion" required><br>
+        <button type="button" onclick="agregarEstudiante()">Agregar</button>
+    </form>
+
+    <h2>Buscar Estudiante</h2>
+    <label for="buscarIdentificacion">Numero de Identificacion a buscar:</label>
+    <input type="text" id="buscarIdentificacion">
+    <button type="button" onclick="buscarEstudiante()">Buscar</button>
+    
+    <div id="resultado"></div>
+</body>
+</html>
